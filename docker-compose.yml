@@ -1,0 +1,6 @@
+version: '2'
+
+services:
+  geth:
+    build: .
+    command: 'geth --networkid "123" --datadir "eth_data" --olympic console'

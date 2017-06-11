@@ -26,4 +26,17 @@ root@782ad6f7e089:/# geth attach ipc://eth_data/geth.ipc
 > eth.getBalance(eth.accounts[0])
 ```
 
+## mining
+
+```
+miner.start()
+miner.stop()
+```
+
+## sendTransaction
+
+```
+eth.sendTransaction({from: eth.accounts[0], to: eth.accounts[1], value: web3.toWei(1, "ether")})
+```
+
 

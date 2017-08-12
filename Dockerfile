@@ -18,3 +18,6 @@ RUN make -C go-ethereum geth
 RUN sudo cp go-ethereum/build/bin/geth /usr/bin/
 RUN mkdir eth_data
 
+RUN mkdir /eth_private_net
+ADD myGenesis.json /eth_private_net/myGenesis.json
+

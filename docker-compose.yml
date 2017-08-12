@@ -3,4 +3,4 @@ version: '2'
 services:
   geth:
     build: .
-    command: 'geth --networkid "123" --datadir "eth_data" --olympic'
+    command: 'geth --networkid "10" --nodiscover --datadir "/eth_private_net" --genesis "/eth_private_net/myGenesis.json"'
